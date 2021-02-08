@@ -7,34 +7,40 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-     
-
       /* DEMO ONLY for this short page - remove in live code */
       body {
         min-height: 1600px;
       }
     </style>
     <script>
-          function scrollWin() {
+      function scrollWin() {
         window.scrollBy(0, 100);
       }
 
-        /* https://github.com/scottjehl/Hide-Address-Bar */
-
-
+      /* https://github.com/scottjehl/Hide-Address-Bar */
     </script>
   </head>
   <body onload="myFunction()">
-
     <p>
       The script on this page should hide the address bar on iOS and Android.
-      <button onclick="scrollWin()" style="position:fixed;">Click me to scroll vertically!</button>
-    
+      <button onclick="scrollWin()" style="position: fixed">
+        Click me to scroll vertically!
+      </button>
+      yee
     </p>
   </body>
-  <script>      function myFunction() {
-     alert("Page is loaded");
-    window.scrollBy(0, 100);
-    console.log("its loaded..........");
-  }</script>
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        // alert("hii")
+        window.scrollTo(0, 100);
+      }, 2000);
+    };
+
+    function myFunction() {
+      alert("Page is loaded");
+      window.scrollBy(0, 100);
+      console.log("its loaded..........");
+    }
+  </script>
 </html>
