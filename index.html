@@ -1,46 +1,79 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Cross-device Address Bar Hide</title>
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enable full screen mode</title>
     <style>
-      /* DEMO ONLY for this short page - remove in live code */
-      body {
-        min-height: 1600px;
+      p {
+        background: gray;
+        color: wheat;
       }
     </style>
-    <script>
-      function scrollWin() {
-        window.scrollBy(0, 100);
-      }
-
-      /* https://github.com/scottjehl/Hide-Address-Bar */
-    </script>
   </head>
-  <body onload="myFunction()">
+  <body >
     <p>
-      The script on this page should hide the address bar on iOS and Android.
-      <button onclick="scrollWin()" style="position: fixed">
-        Click me to scroll vertically!
-      </button>
-      yee
+      Sit justo dolor voluptua dolor eos et gubergren ipsum ea. Et stet dolores
+      duo ut at duo vero sed et, sit rebum lorem vero voluptua no diam elitr
+      justo tempor. Nonumy dolores accusam erat sit, est dolores amet dolor no
+      amet diam. Sadipscing dolores ipsum est consetetur, amet voluptua vero
+      nonumy diam dolore dolor. Dolor sed takimata aliquyam ut sit sit invidunt,
+      tempor ut tempor stet sed. Eos amet no erat diam diam et dolor diam ut,
+      magna sit dolore ipsum lorem nonumy magna magna, takimata eirmod dolore
+      dolore stet erat dolor gubergren voluptua sed. Sed vero consetetur sit
+      lorem dolores diam ipsum at elitr, sea dolor magna eirmod tempor, amet
+      lorem ipsum et diam labore, et vero ut amet sit tempor dolor, ea
+      consetetur dolor et gubergren, dolor elitr ea takimata rebum ipsum. Amet
+      lorem amet takimata sanctus ipsum sadipscing. Et et tempor amet vero
+      accusam ut, et sadipscing elitr takimata dolor et dolores magna, sit
+      takimata amet clita sea. Ut dolores labore no takimata est et sea, et et
+      takimata aliquyam at sit dolor. Sed kasd et et sadipscing et no dolore.
+      Eirmod sit sanctus ipsum ut, sanctus amet dolore sanctus dolor, justo
+      takimata amet aliquyam sed. Clita.
     </p>
-  </body>
-  <script>
-    window.onload = function () {
-      setTimeout(function () {
-        // alert("hii")
-        window.scrollTo(0, 100);
-      }, 2000);
-    };
+    <br />
+    <p>
+      Chamber living longer out bust in quoth books i surely. Cried hauntedtell
+      my one was before. Or to pondered i from door raven prophet soul
+      plutonian. And lenore hesitating dreaming the he bust. On burden nameless
+      such lenore of pondered by as i, remember on for of if the before. Wore on
+      from leave of so fast, of some bends word more. Over its now master hear
+      my stillness no. On lent shaven plainly thy and. Of name the these tempest
+      at upon tinkled, hesitating distinctly bust and then and visiter sad.
+      December his bird wandering nevermore guessing, upon stillness thrilled
+      footfalls sat merely for unbroken. Broken whose heard quoth word undaunted
+      your came, as dream and floor a in murmured on, yore this by it from
+      streaming. Ungainly name my bust the something seraphim demons violet, the
+      but or bust chamber and i shaven me, angels flutter plutonian my the, of
+      quoth and velvet days, quoth tinkled only my by be reclining. From he
+      mefilled yet gileadtell minute i, we decorum into distant my nodded
+      footfalls for chamber, and no whose and out a. An name as at tempest i
+      heard land bust more, censer in black core the was upon all censer not, me
+      that he name human chamber of he the saintly. Has the rare croaking
+      nothing, upon dream that door rare. Bust came above my i the methought
+      turning repeating is, my this adore said i cushions yet. An surely dreams
+      raven whom plutonian. I of nevermore to from fearing craven and and.
+      Chamber darkness some my plutonian maiden implore silken leave and, fowl
+      fancy she deep shutter chamber shaven, raven a aidenn pallas yore again
+      ever bust. Lonely i shaven but broken hopes of, nevermore lining the
+      muttered i sad each for then, above and.
 
-    function myFunction() {
-      alert("Page is loaded");
-      window.scrollBy(0, 100);
-      console.log("its loaded..........");
-    }
-  </script>
+      <button onclick="myFunction()" >click</button>
+    </p>
+
+    <script>
+        // document.addEventListener('dblclick', ()=>{
+        //   document.documentElement.requestFullscreen().catch((e)=>{
+        //   console.log(e);
+        // })
+        // })
+
+        function myFunction(){
+          alert("hello")
+          document.documentElement.requestFullscreen().catch((e)=>{
+          console.log(e);
+        }
+          )}
+    </script>
+  </body>
 </html>
